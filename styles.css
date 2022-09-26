@@ -1,0 +1,92 @@
+ /* internal styling below */
+
+ /* selecting by tagname. use #idname{style here}. the #idname is used to reference
+        the tagname side the body tag */
+ p {
+     color: white;
+     /* border: 1px solid red; */
+ }
+
+ /* selecting using id */
+ #blue {
+     background-color: blue;
+     color: white;
+ }
+
+ /* selecting by class. use .classname {styles here}. the .classname is used to reference
+        the tagname inside the body tag */
+ .chile {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 2rem;
+     color: blue;
+     border-right: purple solid 2px;
+     border-left: 3px solid gold;
+     background-color: brown;
+ }
+ body{
+    font-size: calc(15% + 2.5vh);
+    
+ }
+
+ .img1{
+    width: 200px;
+    height: 200px;
+ }
+ .img2{
+    width: 200px;
+    height: 200px;
+ }
+
+ /* adding background images */
+ .bg1{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url('./img/Hydrangeas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .bg2{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url('https://static.sadhguru.org/d/46272/1633185964-1633185963177.jpg');
+    background-repeat: no-repeat;
+        background-size: 100% 95%;
+ }
+
+ body{
+    background-image: url('https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686968_KS9NVTJgvjMQs2FniVHyIJaAIcg5p7D0.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+ }
+
+ a{
+    color: white;
+    text-decoration:wavy;
+    font-size: 2rem;
+ }
+
+ /* other screen(tablets and andriod phones) styles */
+ @media(max-width: 700px) {
+    body{
+        background-color: gray;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* font-size: 3vw; */
+        /* font-size: calc(15% + 2.5vh);  */
+        /* the font-size using calc() makes sure that as the screen width reduces, the font size grows to be readable*/
+    }
+
+ }
+
+ @media(max-width: 400px) {
+    /* Note: all other styles will still be applied on this condition, only the once you overide will change */
+    body{
+        background-color: black;
+        color: white;
+    }
+    p{
+        color: white;
+    }
+ }
